@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md) · [Installation](docs/INSTALL.md) · [Workflow](docs/USAGE.md)
 
-**v0.1.0 source candidate, prepared for public release under the MIT License.**
+**MIT-licensed research source based on LaunchOptimized082; v0.1.0 release materials are prepared.**
 Only the source and synthetic examples described below are included; SDK/runtime assets
 must be independently obtained under their own terms. See validation limits before use.
 
@@ -44,7 +44,7 @@ Live coordinates with `AMBIGUOUS_SHARED_MARKERS` are diagnostic only.
 Source lives in `AimooeNavigation/`, mutable/default configuration in `Config/`,
 tests in `tests/`, synthetic examples in `examples/`, tooling in `scripts/`.
 CI runs SDK-free tests on Windows/Linux with read-only repository permissions and has no
-deployment, upload or release job. Its remote status is not yet verified.
+deployment, upload or release job. Both Windows and Ubuntu jobs passed: [CI evidence](https://github.com/XinjieAo0227/AimooeNavigation/actions/runs/41306453025).
 
 This project source is licensed under the [MIT License](LICENSE).
 [Third-party notices](THIRD_PARTY_NOTICES.md) describe excluded components.

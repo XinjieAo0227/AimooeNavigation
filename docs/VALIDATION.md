@@ -1,6 +1,6 @@
 # Validation / 验证记录
 
-Local validation date: 2026-11-01 (Asia/Shanghai). No remote CI has run.
+Validation date: 2026-11-01 (Asia/Shanghai). Remote CI passed for source commit `aa7f76c314a180957632350d5241224019961d50`: [run evidence](https://github.com/XinjieAo0227/AimooeNavigation/actions/runs/41306453025).
 
 | Check | Result / scope |
 |---|---|
@@ -13,8 +13,8 @@ Local validation date: 2026-11-01 (Asia/Shanghai). No remote CI has run.
 | Syntax/JSON/doc links/version/CI checks | `scripts/check_project.py`; YAML parsed separately with PyYAML, permissions read-only; no release job |
 | CFF 1.2.0 official schema | YAML PASS; schema PASS after the author confirmed XinjieAo0227 as sole author. Earlier missing-author failure is resolved |
 | License | MIT selected explicitly by XinjieAo0227; official license text and copyright notice included |
-| Clean standard Python virtual environment | NOT VERIFIED: bundled Slicer interpreter `venv` fails in ensurepip, including outside sandbox. Independent CPython 3.12 installation still needed for README clean-env verification |
-| Linux / remote GitHub Actions | NOT RUN; configured CI matrix is not evidence of platform support |
+| Standard CPython 3.12 dependency installation | PASS in fresh Windows and Ubuntu GitHub Actions jobs: pinned dependencies, 50 tests, demo, structure checks and source build. Local Slicer `venv` still fails in ensurepip; use standard CPython for standalone environments |
+| Windows / Ubuntu remote GitHub Actions | PASS for SDK-free standalone functionality. This does not validate Linux Slicer GUI or hardware integration |
 | SDK/hardware/CAD conversion/recording | NOT RUN; excluded licensed assets and physical measurements required |
 
 The first sandboxed unit run failed cleaning a Windows temporary directory; the full
@@ -40,5 +40,5 @@ Create Logs before running (private runtime output, never packaged).
 For citation checks install requirements-metadata.txt and run
 `python scripts/validate_metadata.py <official-1.2.0-schema.json>`; CFF validation and the MIT license gate pass for this source candidate.
 
-本次验证只覆盖本地 Windows 的无 SDK 逻辑及合成 Slicer 流程。未完成纯净标准 CPython 环境、
-Linux、远端 CI、真实硬件、物理精度、CAD 转换和录像验证。作者信息已确认、CFF 校验通过且已选择 MIT；第三方 SDK 与资产继续排除，硬件使用须独立获授权。
+本地 Windows 合成 Slicer 流程已通过；远端 Windows/Ubuntu 标准 Python 3.12 的依赖安装、50 项测试、示例和构建均通过。
+Linux Slicer GUI、真实硬件、物理精度、CAD 转换和录像仍未验证。作者信息已确认、CFF 校验通过且已选择 MIT；第三方 SDK 与资产继续排除，硬件使用须独立获授权。

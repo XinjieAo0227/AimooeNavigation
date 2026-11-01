@@ -14,7 +14,7 @@ py -3.12 -m venv .venv
 ```
 
 On Linux use `python3.12 -m venv .venv` and `.venv/bin/python` for subsequent commands.
-Windows/Linux CI is configured; remote CI has not run. Python wheels are used for
+Standalone Python 3.12 installation and checks passed on Windows/Linux CI; see [evidence](https://github.com/XinjieAo0227/AimooeNavigation/actions/runs/41306453025). Python wheels are used for
 standalone tests only. Do not pip-install `slicer`, `qt` or `ctk` into this environment.
 
 全新 Python 3.12 虚拟环境执行以上命令。Linux 将解释器路径换为 `.venv/bin/python`。

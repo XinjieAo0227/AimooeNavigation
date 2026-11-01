@@ -2,7 +2,7 @@
 
 [English](README.md) · [安装教程](docs/INSTALL.md) · [使用流程](docs/USAGE.md)
 
-**v0.1.0 源码候选，已按作者选择采用 MIT 许可证，准备公开发布。**
+**基于 LaunchOptimized082 的科研源码已按 MIT 许可证公开，v0.1.0 发布材料已准备。**
 仅包含下述源码和合成示例；SDK、运行库及资产须独立取得并遵守其自身条款。使用前请阅读验证限制。
 
 作者与软件权利人：**XinjieAo0227**。根据作者确认，为唯一作者，无所属单位、无共同贡献者。
@@ -38,7 +38,7 @@ GUI 使用见 [安装教程](docs/INSTALL.md)：配置 AIMOOE_SLICER_EXE 后运�
 源码位于 `AimooeNavigation/`，配置位于 `Config/`，测试位于 `tests/`，
 合成示例位于 `examples/`，工具位于 `scripts/`。
 CI 配置在 Windows/Linux 执行无 SDK 测试，仓库权限只读，无部署、上传或发布任务；
-尚未执行远端 CI。
+Windows 和 Ubuntu 作业均已通过，见 [CI 验证记录](https://github.com/XinjieAo0227/AimooeNavigation/actions/runs/41306453025)。
 
 本项目源码采用 [MIT 许可证](LICENSE)。
 [第三方声明](THIRD_PARTY_NOTICES.md) 列出已排除组件。
