@@ -1,0 +1,9 @@
+{
+  "interface": "USB",
+  "toolPath": "AimooeSDK/AimTools",
+  "tool": "",
+  "reference": "",
+  "calibrationTool": "",
+  "localIP": "",
+  "deviceIP": ""
+}

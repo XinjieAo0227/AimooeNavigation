@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this software using the metadata in this file. This is an unreleased local review candidate."
+title: "Aimooe Navigation: LaunchOptimized082"
+type: software
+authors:
+  # Confirmed publication name, kept whole without inferring a legal given name.
+  - family-names: "XinjieAo0227"
+# No release date, DOI, ORCID, repository URL or issued version is asserted.
